@@ -25,6 +25,7 @@
 import cython
 import numpy as np
 cimport numpy as np
+np.get_include()
 
 from c_declarations cimport entropy as c_entropy
 
