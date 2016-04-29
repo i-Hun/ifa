@@ -80,9 +80,7 @@ setup_options = dict(
                                'ifa/utils_impl.cpp',
                                'ifa/distribution_impl.cpp'
                            ],
-                           language="c++",
-                           extra_compile_args=flags + ["-fopenmp"],
-                           extra_link_args=['-fopenmp']),
+                           language="c++"),
                  ],
     classifiers=[
         "Programming Language :: Cython",
