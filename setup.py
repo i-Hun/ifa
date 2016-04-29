@@ -36,8 +36,7 @@ flags = ["-O3",
 # flags = ["-O0", "-std=c++11"]
 
 version = '0.2.0'
-
-setup(
+setup_options = dict(
     name='ifa',
     packages=['ifa'],
     version=version,
@@ -97,5 +96,9 @@ setup(
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Scientific/Engineering :: Information Analysis"
-    ],
-)
+    ])
+    
+for em in setup_options["ext_modules"]:
+    em.include_dirs = [np.get_include()]
+    
+setup(**setup_options)
