@@ -80,7 +80,8 @@ setup_options = dict(
                                'ifa/utils_impl.cpp',
                                'ifa/distribution_impl.cpp'
                            ],
-                           language="c++"),
+                           language="c++",
+                           extra_compile_args=flags),
                  ],
     classifiers=[
         "Programming Language :: Cython",
