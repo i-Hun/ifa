@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 import os
 import sys
+import numpy as np
+np.get_include()
 
 from distutils.core import setup
 from distutils.extension import Extension
